@@ -1,0 +1,241 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: all .2s linear;
+    outline: none;
+    list-style: none;
+}
+
+:root {
+    --box-shadow: 0 .5rem 1rem rgba(0, 0, 0,.1);
+    --border: .1rem solid rgba(0,0,0,.1);
+    --border-radius: .5rem;
+    --black: #222;
+    --light-Black: #2c2c2c;
+    --night-blue: #000220;
+}
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    scroll-padding-top: 7rem;
+    overflow-x: hidden;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+header {
+    padding: 1rem 5%;
+}
+
+.header {
+    position: fixed;
+    top: 0rem; left: 0; right: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #FFF;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.377);
+}
+
+.area-logo a {
+    font-size: 2rem;
+    color: var(--night-blue);
+    font-weight: 600;;
+}
+
+.area-logo img {
+    width: 40px;
+    object-fit: cover;
+}
+
+.btn {
+    display: inline-block;
+    padding: 1rem 1rem;
+    font-weight: 600;
+    color: #FFF;
+    background-color: #222d5a;
+    cursor: pointer;
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+}
+.btn:hover {
+    color: #222d5a;
+    background-color: #ccc;
+}
+
+.navbar {
+    display: flex;
+    gap: 2rem;
+}
+
+.navbar li a {
+    color: #000;
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+
+.navbar li a:hover,
+.navbar li a.active {
+    color:var(--night-blue);
+}
+
+.area-signUp button{
+    background-color:#222d5a;
+    padding: .8rem 1rem;
+    color: #FFF;
+    width: 100px;
+    border-radius: 3rem;
+    text-transform: uppercase;
+}
+
+.area-signUp button i {
+    margin-left: .8rem;
+    cursor: pointer;
+}
+
+.area-signUp button:hover {
+    transition: all .2s ease-in-out;
+    background-color: #222d5a;
+}
+
+.header .login-form {
+    position: absolute;
+    top: 110%; right: -150%;
+    width: 35rem;
+    box-shadow: var(--box-shadow);
+    border-radius: var(--border-radius);
+    padding: 2rem;
+    background-color: #FFF;
+    text-align: center;
+}
+
+.header .login-form.active {
+    right: 2rem;
+    transition: all .3s ease-out;
+}
+
+.header .login-form h3 {
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: var(--black);
+    text-transform: uppercase;   
+}
+
+.header .login-form .box {
+    width: 100%;
+    margin: .7rem 0;
+    background-color: #EEE;
+    border-radius: var(--border-radius);
+    padding: 1rem;
+    font-size: 1.6rem;
+    color: var(--black);
+    text-transform: none;
+}
+
+.header .login-form p {
+    color: var(--black);
+    font-size: 1.3rem;
+    padding: 1rem 0;
+    text-transform: none;
+}
+
+.header .login-form p a {
+    color: #222d5a;
+    font-size: 1.3rem;
+    padding: 1rem 0;
+    text-decoration: underline;
+}
+
+.header .login-form .btn {
+    display: block;
+    width: 100%;
+}
+
+/* Banner Area */
+
+.home {
+    background-image: url(./images/bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 35rem;
+    padding-bottom: 10rem;
+    position: relative;
+}
+
+.home .content {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 30%; left: 0; right: 0;
+}
+
+.home .content .content-box {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.home .content .content-box h1 {
+    margin: 0;
+    font-size: 3rem;
+    color: #FFF;
+    font-weight: 700;
+}
+
+.home .content .content-box p {
+    color: #ccc;
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 25px;
+    margin-bottom: 1rem;
+}
+
+.home .content .content-box .content-button {
+    display: flex;
+    align-items: center;
+}
+
+.home .content .content-box .content-button button {
+    background-color:#222d5a;
+    color: #FFF;
+    padding: 1rem .9rem;
+    border-radius: var(--border-radius);
+    text-transform: none;
+}
+
+.reproduce-area {
+    margin-left: 2rem;
+    display: flex;
+    align-items: center;
+}
+
+.home .content .content-box .content-button .reproduce-area .play-area img {
+    width: 30px;
+    object-fit: cover;
+}
+
+.home .content .content-box .content-button .reproduce-area span {
+    color: #FFF;
+    margin-left: .8rem;
+    cursor: pointer;
+    font-size: 1.7rem;
+}
+
