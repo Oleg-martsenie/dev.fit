@@ -47,6 +47,17 @@ header {
     box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.377);
 }
 
+#menu-mobile {
+    display: none;
+
+}
+
+#menu-mobile i {
+    cursor: pointer;
+    font-size: 2rem;
+    color: #222d5a;
+}
+
 .area-logo a {
     font-size: 2rem;
     color: var(--night-blue);
@@ -239,3 +250,242 @@ header {
     font-size: 1.7rem;
 }
 
+.patron {
+    background-color: #f5f5f5;
+    padding: 1rem 5%;
+}
+
+.patron .box-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 3rem;
+}
+
+.patron .box-container .box {
+    padding: 1rem 2rem;
+}
+
+.patron .box-container .box img {
+    height: 12vh;
+}
+
+.exercises .row {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    padding: 2rem;
+    padding-bottom: 3rem;
+}
+
+.exercises .row .content {
+    flex: 1 1 40rem;
+    align-self: start;
+}
+
+.exercises .row .content a{
+    color: var(--night-blue);
+    font-size: 2rem;
+    font-weight: 600;
+    text-decoration: underline;
+}
+
+.exercises .row .content h2 {
+    font-size: 3rem;
+    color: #333;
+}
+
+.exercises .row .content p {
+    font-size: 1.5rem;
+    color: var(--light-Black);
+    padding-top: 1rem;
+    margin-bottom: 5rem;
+}
+
+.exercises .row .image {
+    flex: 1 1 40rem;
+    position: relative;
+}
+
+.exercises .row .image  img {
+    width: 100%; height: 100%;
+    object-fit: cover;
+    border-radius: var(--border-radius);
+}
+
+
+.exercises-inverted .row {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    height: 40;
+    flex-wrap: wrap;
+    padding: 2rem;
+    padding-bottom: 3rem;
+    background-color: lightblue;
+}
+
+.exercises-inverted .row .content {
+    flex: 1 1 40rem;
+    align-self: start;
+}
+
+.exercises-inverted .row .content a{
+    color: var(--night-blue);
+    font-size: 2rem;
+    font-weight: 600;
+    text-decoration: underline;
+}
+
+.exercises-inverted .row .content h2 {
+    font-size: 3rem;
+    color: #333;
+}
+
+.exercises-inverted .row .content p {
+    font-size: 1.5rem;
+    color: var(--light-Black);
+    padding-top: 1rem;
+    margin-bottom: 5rem;
+}
+
+.exercises-inverted .row .image {
+    flex: 1 1 40rem;
+    position: relative;
+}
+
+.exercises-inverted .row .image  img {
+    width: 70%; height: 100%;
+    object-fit: cover;
+    border-radius: var(--border-radius);
+}
+
+.heroarea {
+    margin-top: 7rem;
+}
+
+.heroarea .flex-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1070px;
+    gap: 2rem;
+    margin: 0 auto;
+}
+
+.heroarea .flex-item h3 {
+    font-size: 2rem;
+    color: #333;
+}
+
+.heroarea .flex-item a {
+    color: var(--night-blue);
+    font-size: 2rem;
+    font-weight: 600;
+    text-decoration: underline;
+}
+
+.hero {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(5rem, 1fr));
+    flex-wrap: wrap;
+    gap: 2rem;
+    max-width: 1070px;
+    margin: 0 auto;
+}
+
+.hero > .box {
+    flex:  1 1 200px;
+    margin: 10px;
+    border-radius: var(--border-radius);
+    border: var(--border);
+    background-color: #F5F5F5;
+}
+
+.hero > .box img {
+    max-width: 100%;
+    object-fit: cover;
+    border-radius: var(--border-radius);
+    display: block;
+}
+
+.box h3 {
+    margin: 2rem 0 .5rem 1rem;
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.box p {
+    padding: .8rem 1rem;
+    font-size: 1.5rem;
+    border-radius: 0 0  .3rem .3rem;
+}
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:991px) {
+    html {
+        font-size: 55%;
+    }
+    header {
+        padding: 1rem;
+    }
+    .patron .box-container {
+        overflow-x: scroll;
+    }
+}
+
+@media screen and (max-width:768px) {
+    #menu-mobile {
+        display: initial;
+        z-index: 100000;
+    }
+    .navbar {
+        position: fixed;
+        top: 0; right: -105%;
+        width: 30rem;
+        background-color: #FFFFFF10;
+        backdrop-filter: blur(12px);
+        -webkit-backdrop-filter: blur((12px));
+        box-shadow: var(--box-shadow);
+        height: 100%;
+        flex-flow: column;
+        justify-content: center;
+    }
+    .navbar li a {
+        display: block;
+        margin: 1rem 0;
+        text-align: center;
+        font-size: 3rem;
+    }
+    .navbar.active {
+        right: 0;
+    }
+    .exercises-inverted .row .image  img {width: 100%;}
+    .hero {
+        grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
+    }
+    .heroarea {
+        padding: 0 1rem;
+    }
+    .heroarea .flex-item {
+        max-width: 800px;
+    }
+}
+
+@media screen and (max-width:450px) {
+    html {
+        font-size: 50%;
+    }
+    .home .content .content-box p {
+        line-height: 20px;
+    }
+    .exercises-inverted .row .image  img {width: 100%;}
+}
