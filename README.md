@@ -12,4 +12,4 @@
 
 ## Gif
 
-<img src="\images\devfit.gif" alt="Presentation of project">
+<img src=".\images\devfit.gif" alt="Presentation of project">
