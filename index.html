@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -20,7 +21,7 @@
                 <li><a href="#home" class="active">Home</a></li>
                 <li><a href="#exercises">exercises</a></li>
                 <li><a href="#trainers">trainers</a></li>
-                <li><a href="#about-us">about us</a></li>
+                <li><a href="#testimonials">testimonials</a></li>
             </nav>
         </div>
         <div class="area-signUp">
@@ -109,39 +110,131 @@
             <a href="#">see more exercises</a>
         </div>
         <div class="hero">
-        <div class="box">
-            <img src="images/treadmill.jpg" alt="treadmill">
-            <h3>treadmil</h3>
-            <p>250 est calories</p>
+            <div class="box">
+                <img src="images/treadmill.jpg" alt="treadmill">
+                <h3>treadmil</h3>
+                <p>250 est calories</p>
+            </div>
+            <div class="box">
+                <img src="images/stretching.jpg" alt="stretching">
+                <h3>stretching</h3>
+                <p>250 est calories</p>
+            </div>
+            <div class="box">
+                <img src="images/lifting.jpg" alt="yoga">
+                <h3>lifting</h3>
+                <p>250 est calories</p>
+            </div>
+            <div class="box">
+                <img src="images/running.jpg" alt="running">
+                <h3>running</h3>
+                <p>250 est calories</p>
+            </div>
+            <div class="box">
+                <img src="images/lifting.jpg" alt="lifting">
+                <h3>lifting</h3>
+                <p>250 est calories</p>
+            </div>
+            <div class="box">
+                <img src="images/pusUp.jpg" alt="push up">
+                <h3>push up</h3>
+                <p>250 est calories</p>
+            </div>
         </div>
-        <div class="box">
-            <img src="images/stretching.jpg" alt="stretching">
-            <h3>stretching</h3>
-            <p>250 est calories</p>
-        </div>
-        <div class="box">
-            <img src="images/lifting.jpg" alt="yoga">
-            <h3>lifting</h3>
-            <p>250 est calories</p>
-        </div>
-        <div class="box">
-            <img src="images/running.jpg" alt="running">
-            <h3>running</h3>
-            <p>250 est calories</p>
-        </div>
-        <div class="box">
-            <img src="images/lifting.jpg" alt="lifting">
-            <h3>lifting</h3>
-            <p>250 est calories</p>
-        </div>
-        <div class="box">
-            <img src="images/pusUp.jpg" alt="push up">
-            <h3>push up</h3>
-            <p>250 est calories</p>
-        </div>
-    </div>
     </section>
 
+    <section class="trainers" id="trainers">
+        <div class="title">
+            <h1 class="heading">meet our trainers</h1>
+            <span>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</span>
+        </div>
+    
+        <div class="box-container">
+            <div class="box">
+                <img src="images/run-stp.jpg" alt="running">
+                <div class="content">
+                    <h3>running</h3>
+                    <p>250 est calories</p>
+                </div>
+            </div>
+            <div class="box">
+                <img src="images/karen-summer-2.jpg" alt="lifting">
+                <div class="content">
+                    <h3>lifting</h3>
+                    <p>250 est calories</p>
+                </div>
+            </div>
+            <div class="box">
+                <img src="images/stretching.jpg" alt="push up">
+                <div class="content">
+                    <h3>push up</h3>
+                    <p>250 est calories</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="testimonials" id="testimonials">
+        <div class="title">
+            <h1 class="heading">what our clients says!</h1>
+            <span>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</span>
+        </div>
+        
+        <div class="swiper testimonials-slider">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide slide">
+                    <h3 class="title">testimonials</h3>
+                    <div class="box-container">
+                       <div class="box">
+                          <div class="info">
+                             <h3>João Silva</h3>
+                             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ex, dolores.</p>
+                          </div>
+                          <div class="price">🤩🤩🤩</div>
+                       </div>
+                       <div class="box">
+                          <div class="info">
+                             <h3>Nikita Mikhaloich</h3>
+                             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ex, dolores.</p>
+                          </div>
+                          <div class="price">🤩🤩🤩</div>
+                       </div>
+                       <div class="box">
+                          <div class="info">
+                             <h3>Amanda souza</h3>
+                             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ex, dolores.</p>
+                          </div>
+                          <div class="price">🤩🤩🤩</div>
+                       </div>
+                    </div>
+                 </div>
+            </div>
+            <div class="swiper-pagination top"></div>
+        </div>
+
+    </section>
+
+
+    <section class="area-footer">
+        <div class="credits">
+            <span>Made by João Gabriel Póvoa</span>
+        </div>
+    </section>
+
+    <footer>
+        <div class="logo">
+            <a href="#">
+                <img src="/images/logo.png" alt="Avocado Logo">dev.fit
+            </a>
+        </div>
+        <div class="socials">
+            <a href="https://github.com/Oleg-martsenie/" ><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/joão-póvoa-8565b0218/" ><i class="fab fa-linkedin"></i></a>
+        </div>
+    </footer>
+
+
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
     <script src="app.js"></script>
 </body>
 </html>
